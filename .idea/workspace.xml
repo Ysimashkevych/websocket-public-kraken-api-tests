@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf2c973f-e6c2-4247-9146-e502f05664eb" name="Changes" comment="Adding tests">
-      <change afterPath="$PROJECT_DIR$/NOTES.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/book_tests/BookSubscriptionNoCurrencyPairSuppliedTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/common/Common.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/spread_tests/SpreadSubscriptionPositiveTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests_utils/TestsUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ticker_tests/TickerSubscriptionPositiveTests.java" afterDir="false" />
+    <list default="true" id="bf2c973f-e6c2-4247-9146-e502f05664eb" name="Changes" comment="Notes + moving used across tests json locators + cleanup">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/SocketData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/SocketData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/WebSocketClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/WebSocketClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/book_tests/BookSubscriptionNegativeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/book_tests/BookSubscriptionInvalidCurrencyPairTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/book_tests/BookSubscriptionPositiveTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/book_tests/BookSubscriptionPositiveTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NOTES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/NOTES.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +40,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.grazie"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   },
   "keyToStringList": {
     "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
@@ -194,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654148050119</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Notes + moving used across tests json locators + cleanup">
+      <created>1654190454811</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1654190454811</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -212,6 +212,8 @@
     <MESSAGE value="Initial" />
     <MESSAGE value="Adding surefire plugin" />
     <MESSAGE value="Adding tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding tests" />
+    <MESSAGE value="Notes + moving commonly used across tests locators + cleanup" />
+    <MESSAGE value="Notes + moving used across tests json locators + cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Notes + moving used across tests json locators + cleanup" />
   </component>
 </project>

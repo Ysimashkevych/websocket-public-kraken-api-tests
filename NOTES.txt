@@ -1,18 +1,17 @@
 Hi,
 
-So I covered just a very little part of an API, many more tests could be added.
+So I covered just a very little part of an API, many more tests could be added:
 - checks of price data received for each message
 - checks for consistency of data with some DB
-- different book depths, intervals, negative tests for those
+- different book depths, intervals, negative tests for those etc.
 
-Basically for each request field that somehow affects returned messages to a client we could have few tests. There is just not enough time to create such.
+Basically for each request field that somehow affects returned messages to a client we could have a few.
 
 API is well documented on my opinion, a little exploratory testing would help to uncover what is missing, but again time is needed.
 
 Great idea would be also to get available currency pairs from REST API and pick random one on each execution. This will cover more variants with a little effort and execution time.
 
-We can also create parametrised tests for subscriptions tests.
+We can also create parametrised tests for subscriptions tests. And instead of displaying received messages to console we can implement logging them into file.
 
 Hope everything looks fine for you :)
-
 Yurii
