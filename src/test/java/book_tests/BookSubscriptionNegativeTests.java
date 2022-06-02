@@ -28,7 +28,7 @@ public class BookSubscriptionNegativeTests {
 
     @BeforeAll
     public static void receiveData() throws ExecutionException, InterruptedException {
-        Client.connectAndListen(message, socketData, 30);
+        Client.connectAndListen(message, socketData, 10);
         messageWithError = new JsonPath(socketData.getMessageList().get(1));
     }
 

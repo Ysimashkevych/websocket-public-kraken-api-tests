@@ -4,18 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf2c973f-e6c2-4247-9146-e502f05664eb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/client/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/client/SocketData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/client/WebSocketClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/book_tests/BookSubscriptionNegativeTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/book_tests/BookSubscriptionPositiveTests.java" afterDir="false" />
+    <list default="true" id="bf2c973f-e6c2-4247-9146-e502f05664eb" name="Changes" comment="Initial">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/book_tests/BookSubscriptionNegativeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/book_tests/BookSubscriptionNegativeTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +53,7 @@
       <recent name="book_tests" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BookSubscriptionPositiveTests">
+  <component name="RunManager" selected="JUnit.BookSubscriptionNegativeTests">
     <configuration name="BookSubscriptionNegativeTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="api-tests" />
       <extension name="coverage">
@@ -144,8 +136,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BookSubscriptionPositiveTests" />
         <item itemvalue="JUnit.BookSubscriptionNegativeTests" />
+        <item itemvalue="JUnit.BookSubscriptionPositiveTests" />
         <item itemvalue="JUnit.BookSubscriptionNegativeTests.subscribe" />
         <item itemvalue="JUnit.BookSubscriptionTest.openSubscription" />
         <item itemvalue="JUnit.BookSubscriptionNegativeTests.openSubscription" />
@@ -161,6 +153,14 @@
       <option name="presentableId" value="Default" />
       <updated>1654103846842</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial">
+      <created>1654147524832</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1654147524832</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -173,5 +173,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial" />
   </component>
 </project>
