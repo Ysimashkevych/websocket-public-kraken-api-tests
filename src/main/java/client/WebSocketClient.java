@@ -31,7 +31,6 @@ public class WebSocketClient implements WebSocket.Listener {
 
     @Override
     public CompletionStage<?> onClose(WebSocket webSocket, int statusCode, String reason) {
-        this.socketData.statusCode = statusCode;
         System.out.println(getCurrentTimeStamp() + " Connection closed");
         return WebSocket.Listener.super.onClose(webSocket, statusCode, reason);
     }

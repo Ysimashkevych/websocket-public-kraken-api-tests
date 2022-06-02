@@ -2,6 +2,7 @@ package book_tests;
 
 import client.Client;
 import client.SocketData;
+import common.Common;
 import io.restassured.path.json.JsonPath;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
@@ -9,18 +10,15 @@ import org.junit.jupiter.api.Test;
 
 import java.util.concurrent.ExecutionException;
 
-public class BookSubscriptionNegativeTests {
+public class BookSubscriptionNoCurrencyPairSuppliedTests extends Common {
 
-    private static final String invalidCurrencyPair = "XBT/EURopa";
-    private static final String message  = "{\n" +
-            "  \"event\": \"subscribe\",\n" +
-            "\"pair\": [\n" +
-            "    \"" + invalidCurrencyPair + "\"\n" +
-            "  ]," +
-            "  \"subscription\": {\n" +
-            "    \"name\": \"book\"\n" +
-            "  }\n" +
-            "}";
+    private static final String message  = """
+            {
+              "event": "subscribe",
+              "subscription": {
+                "name": "book"
+              }
+            }""";
 
     static JsonPath messageWithError;
 
@@ -34,15 +32,12 @@ public class BookSubscriptionNegativeTests {
 
     @Test
     public void errorMessageShouldBeReceived() {
-        Assertions.assertEquals("Currency pair not supported " + invalidCurrencyPair, messageWithError.getString("errorMessage"));
+        Assertions.assertEquals("Pair(s) not found", messageWithError.getString(errorMessageJsonPathLocator));
     }
 
     @Test
     public void statusShouldBeError() {
-        Assertions.assertEquals("error", messageWithError.getString("status"));
+        Assertions.assertEquals(errorStatusString, messageWithError.getString(statusMessageJsonPathLocator));
     }
 
 }
-
-//check what can be automated
-//10 tests :)

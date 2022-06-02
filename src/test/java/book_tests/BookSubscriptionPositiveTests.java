@@ -2,6 +2,7 @@ package book_tests;
 
 import client.Client;
 import client.SocketData;
+import common.Common;
 import io.restassured.path.json.JsonPath;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
@@ -9,7 +10,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.concurrent.ExecutionException;
 
-public class BookSubscriptionPositiveTests {
+public class BookSubscriptionPositiveTests extends Common {
 
     private static final String currencyPair = "XBT/EUR";
     private static final String bookDepth = "10";
@@ -36,7 +37,7 @@ public class BookSubscriptionPositiveTests {
 
     @Test
     public void channelIdShouldBeReceived() {
-        int channelId = messageWithSubscriptionDetails.getInt("channelID");
+        int channelId = messageWithSubscriptionDetails.getInt(chanelIDJsonPathLocator);
         Assertions.assertTrue(channelId != 0, "ChannelId is not received");
     }
 
@@ -47,12 +48,11 @@ public class BookSubscriptionPositiveTests {
 
     @Test
     public void correctCurrencyPairShouldBeReceived() {
-        Assertions.assertEquals(currencyPair, messageWithSubscriptionDetails.getString("pair"));
+        Assertions.assertEquals(currencyPair, messageWithSubscriptionDetails.getString(currencyPairJsonPathLocator));
     }
 
     @Test
     public void subscriptionNameShouldBeCorrect() {
-        Assertions.assertEquals("book", messageWithSubscriptionDetails.getString("subscription.name"));
+        Assertions.assertEquals("book", messageWithSubscriptionDetails.getString(subscriptionNameJsonPathLocator));
     }
-
 }
